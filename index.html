@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="0; url=./venue/">
+  <title>Jalsa Workspace Launcher</title>
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --card: #fffdf8;
+      --text: #2f251c;
+      --muted: #6b5a49;
+      --accent: #8f5f2d;
+      --border: #e6d8c7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: radial-gradient(circle at top left, #fff7eb 0%, var(--bg) 45%, #efe8de 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .panel {
+      width: min(760px, 100%);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 18px 40px rgba(47, 37, 28, 0.1);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(1.4rem, 2vw + 1rem, 2rem);
+    }
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .btn {
+      appearance: none;
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: #fff;
+      border-radius: 10px;
+      padding: 10px 14px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn.secondary {
+      background: transparent;
+      color: var(--accent);
+    }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+      display: grid;
+      gap: 8px;
+    }
+    .hidden { display: none; }
+    a { color: #5d3f1d; }
+  </style>
+</head>
+<body>
+  <main class="panel">
+    <h1>Redirecting to Venue...</h1>
+    <p>If you are not redirected automatically, open <a href="./venue/">Venue</a>.</p>
+  </main>
+
+  <script>
+    window.location.replace('./venue/');
+  </script>
+</body>
+</html>

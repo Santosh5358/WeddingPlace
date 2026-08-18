@@ -1,0 +1,18 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Jalsa static site",
+			"type": "shell",
+			"command": "npx",
+			"args": [
+				"--yes",
+				"http-server",
+				".",
+				"-p",
+				"5500"
+			],
+			"isBackground": true
+		}
+	]
+}
